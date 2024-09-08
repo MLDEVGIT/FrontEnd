@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    font-size: 1rem; /* Tamaño base de 1rem (16px por defecto) */
+    font-size: 1rem; /* Tamaño base de 1rem */
 }
 
 /* Estilos del encabezado */
@@ -24,11 +24,11 @@ header h1 {
 
 /* Estilos para las secciones principales */
 main {
-    padding: 1.25rem; /* Padding ajustado en rem */
+    padding: 1.25rem; 
 }
 
 section {
-    margin-bottom: 1.875rem; /* Márgen inferior usando rem */
+    margin-bottom: 1.875rem; 
 }
 
 /* Estilos para la tabla */
@@ -48,13 +48,13 @@ td {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 0.5rem; /* Padding en rem para mayor adaptabilidad */
+    padding: 0.5rem; 
 }
 
 th {
     background-color: #4CAF50;
     color: white;
-    font-size: 1.125rem; /* Tamaño de texto relativo */
+    font-size: 1.125rem; 
 }
 
 /* Estilos para el formulario */
@@ -64,23 +64,23 @@ form {
 }
 
 label {
-    margin-top: 0.625rem; /* Márgen superior ajustado en rem */
+    margin-top: 0.625rem; 
 }
 
 input[type="text"], input[type="email"], input[type="tel"] {
-    padding: 0.3125rem; /* Padding ajustado en rem */
-    margin-bottom: 0.625rem; /* Márgen inferior en rem */
+    padding: 0.3125rem; 
+    margin-bottom: 0.625rem; 
     width: 100%;
-    max-width: 18.75rem; /* Ancho máximo en rem */
+    max-width: 18.75rem; 
 }
 
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    padding: 0.625rem; /* Padding en rem */
+    padding: 0.625rem; 
     border: none;
     cursor: pointer;
-    width: 6.25rem; /* Ancho del botón ajustado en rem */
+    width: 6.25rem; 
 }
 
 input[type="submit"]:hover {
@@ -90,18 +90,18 @@ input[type="submit"]:hover {
 /* Estilos para la imagen */
 img {
     border-radius: 5%;
-    width: 12.5rem; /* Ancho de la imagen ajustado a rem */
-    height: 12.5rem; /* Alto de la imagen ajustado a rem */
+    width: 12.5rem; 
+    height: 12.5rem; 
 }
 
 /* Estilos del pie de página */
 footer {
     text-align: center;
-    padding: 0.3125rem; /* Padding ajustado en rem */
+    padding: 0.3125rem; 
     background-color: #333;
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
-    font-size: 0.875rem; /* Tamaño de fuente ajustado (aproximadamente 14px) */
+    font-size: 0.875rem; 
 }
