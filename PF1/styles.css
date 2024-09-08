@@ -1,4 +1,4 @@
-/* Estilos globales */
+/* Estilos de toda la página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,10 +33,17 @@ table {
     border-collapse: collapse;
 }
 
+th {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
 }
 
 th {
@@ -76,7 +83,7 @@ input[type="submit"]:hover {
 
 /* Estilos para la imagen */
 img {
-    border-radius: 50%;
+    border-radius: 5%;
     width: 200px;
     height: 200px;
 }
@@ -84,10 +91,11 @@ img {
 /* Estilos del pie de página */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #333;
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 14 px;
 }
