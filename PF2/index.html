@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML-Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="encabezado">
+            <h1>¡Buenas! Soy Martín</h1>
+            <p>Bienvenido a mi portafolio personal</p>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+    <main>
+        <!-- Sección Sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="contenido-flex">
+                <img src="assets/img/Imagen_Sección_1.jpg" alt="Foto representativa de mí">
+                <p>
+                    Soy una persona intentado aprender y resolver problemas en el camino; al paso, pero vamos. Nací en Argentina, pero Extremadura es parte de mí.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección Tecnologías -->
+        <section id="tecnologias">
+            <h2>Tecnologías y Hobbies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Conocidas</th>
+                        <th>Quiero Aprender</th>
+                        <th>Hobbies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DAX</td>
+                        <td>Node.js</td>
+                        <td>Leer</td>
+                    </tr>
+                    <tr>
+                        <td>T-SQL</td>
+                        <td>HTML</td>
+                        <td>Judo</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>React</td>
+                        <td>Andar en bici</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ingrese su teléfono" required>
+
+                <button type="submit">
+                    <i class="fa fa-paper-plane"></i> Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Encuéntrame en <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
