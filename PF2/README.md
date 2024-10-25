@@ -8,8 +8,8 @@ Como parte de la cursada de la materia FrontEnd, comencé a realizar una página
 
 ## Contenido
 
-- **Sobre mí:** Aquí encontrarás información sobre mi trayectoria y mis intereses en la programación.
-- **Qué hago:** Una descripción de los servicios que ofrezco como desarrollador web y consultor.
+- **Sobre mí:** Aquí encontrarás información sobre mi trayectoria.
+- **Qué hago:** Una descripción de los que hago como desarrollador y consultor.
 - **Tecnologías:** Una tabla donde enumero las tecnologías que manejo y aquellas que me gustaría aprender.
 
 ## Captura de pantalla
