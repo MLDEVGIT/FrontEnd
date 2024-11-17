@@ -1,37 +1,52 @@
-/// Ejercicio 1: Calcular el área de un rectángulo
+// Ejercicio 1: Calcular el área de un rectángulo
 function calcularAreaRectangulo(longitud, ancho) {
     return longitud * ancho;
 }
 
-document.write("<h3>Solución 1:</h3>");
-document.write(`${calcularAreaRectangulo(5, 3)}<br>`); // Resultado: 15
-document.write(`${calcularAreaRectangulo(10, 2)}<br>`); // Resultado: 20
-document.write(`${calcularAreaRectangulo(8, 4)}<br>`); // Resultado: 32
-document.write("<hr>");
+console.log("Solución 1:");
+console.log(calcularAreaRectangulo(5, 3)); // Resultado: 15
+console.log(calcularAreaRectangulo(10, 2)); // Resultado: 20
+console.log(calcularAreaRectangulo(8, 4)); // Resultado: 32
+console.log("///////////////////////////////");
+
+/*
+Proceso:
+Pensé en cómo se calcula el área de un rectángulo: multiplicando longitud por ancho. 
+La función toma esos dos parámetros y retorna el resultado de la multiplicación.
+*/
 
 // Ejercicio 2: Contar palabras en una cadena
 function contarPalabras(cadena) {
     return cadena.split(" ").length;
 }
 
+console.log("Solución 2:");
+console.log(contarPalabras("Humahuaca es un lugar copado")); // Resultado: 5
+console.log(contarPalabras("Hola mundo")); // Resultado: 2
+console.log(contarPalabras("Esto es un texto de prueba")); // Resultado: 6
+console.log("///////////////////////////////");
 
-
-document.write("<h3>Solución 2:</h3>");
-document.write(`${contarPalabras("Humahuaca es un lugar copado")}<br>`); // Resultado: 5
-document.write(`${contarPalabras("Hola mundo")}<br>`); // Resultado: 2
-document.write(`${contarPalabras("Esto es un texto de prueba")}<br>`); // Resultado: 6
-document.write("<hr>");
+/*
+Proceso:
+Decidí dividir la cadena en palabras usando `split(" ")`, que separa por espacios, y conté los elementos en el array resultante.
+*/
 
 // Ejercicio 3: Invertir una cadena
 function invertirCadena(cadena) {
     return cadena.split("").reverse().join("");
 }
 
-document.write("<h3>Solución 3:</h3>");
-document.write(`${invertirCadena("hola")}<br>`); // Resultado: "aloh"
-document.write(`${invertirCadena("mundo")}<br>`); // Resultado: "odnum"
-document.write(`${invertirCadena("JavaScript")}<br>`); // Resultado: "tpircSavaJ"
-document.write("<hr>");
+console.log("Solución 3:");
+console.log(invertirCadena("hola")); // Resultado: "aloh"
+console.log(invertirCadena("mundo")); // Resultado: "odnum"
+console.log(invertirCadena("JavaScript")); // Resultado: "tpircSavaJ"
+console.log("///////////////////////////////");
+
+/*
+Proceso:
+Para invertir la cadena, primero la convertí en un array de caracteres (`split("")`), luego la invertí (`reverse()`) 
+y finalmente la volví a unir en una cadena con `join("")`.
+*/
 
 // Ejercicio 4: Encontrar el palíndromo
 function esPalindromo(cadena) {
@@ -39,20 +54,29 @@ function esPalindromo(cadena) {
     return cadena === cadenaInvertida;
 }
 
-document.write("<h3>Solución 4:</h3>");
-document.write(`${esPalindromo("neuquen")}<br>`); // true
-document.write(`${esPalindromo("reconocer")}<br>`); // true
-document.write(`${esPalindromo("hola")}<br>`); // false
-document.write("<hr>");
+console.log("Solución 4:");
+console.log(esPalindromo("neuquen")); // true
+console.log(esPalindromo("reconocer")); // true
+console.log(esPalindromo("hola")); // false
+console.log("///////////////////////////////");
+
+/*
+Proceso:
+Verifiqué si la cadena es igual a su versión invertida. Si son iguales, es un palíndromo.
+*/
 
 // Ejercicio 5: Convertir la edad de un perro a años humanos
-function edadCanina(edadPerro) {
+function edadCanina() {
+    let edadPerro = parseInt(prompt("Ingresa la edad de tu perro:"));
     let edadHumana = edadPerro * 7;
-    document.write(`Tu perro tiene ${edadHumana} años humanos.<br>`);
+    console.log(`Tu perro tiene ${edadHumana} años humanos.`);
 }
 
-document.write("<h3>Solución 5:</h3>");
-edadCanina(7); // Resultado: Tu perro tiene 49 años humanos.
-edadCanina(3); // Resultado: Tu perro tiene 21 años humanos.
-edadCanina(10); // Resultado: Tu perro tiene 70 años humanos.
-document.write("<hr>");
+console.log("Solución 5:");
+edadCanina(); // Este ejecutará el `prompt` en el navegador.
+console.log("///////////////////////////////");
+
+/*
+Proceso:
+Tomé la edad del perro desde un `prompt`, la multipliqué por 7 para convertirla a años humanos y mostré el resultado con `console.log()`.
+*/
