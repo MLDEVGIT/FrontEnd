@@ -21,7 +21,7 @@ function contarPalabras(cadena) {
 }
 
 console.log("Solución 2:");
-console.log(contarPalabras("Humahuaca es un lugar copado")); // Resultado: 5
+console.log(contarPalabras("Miramar es un lugar ideal para vivir")); // Resultado: 7
 console.log(contarPalabras("Hola mundo")); // Resultado: 2
 console.log(contarPalabras("Esto es un texto de prueba")); // Resultado: 6
 console.log("///////////////////////////////");
@@ -38,7 +38,7 @@ function invertirCadena(cadena) {
 
 console.log("Solución 3:");
 console.log(invertirCadena("hola")); // Resultado: "aloh"
-console.log(invertirCadena("mundo")); // Resultado: "odnum"
+console.log(invertirCadena("Html")); // Resultado: "lmtH"
 console.log(invertirCadena("JavaScript")); // Resultado: "tpircSavaJ"
 console.log("///////////////////////////////");
 
