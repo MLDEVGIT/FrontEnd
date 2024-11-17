@@ -1,53 +1,37 @@
-// Ejercicio 1: Calcular el área de un rectángulo
+/// Ejercicio 1: Calcular el área de un rectángulo
 function calcularAreaRectangulo(longitud, ancho) {
     return longitud * ancho;
 }
 
-console.log("Solución 1:");
-console.log(calcularAreaRectangulo(5, 3)); // Resultado: 15
-console.log(calcularAreaRectangulo(10, 2)); // Resultado: 20
-console.log(calcularAreaRectangulo(8, 4)); // Resultado: 32
-console.log("///////////////////////////////");
-
-/*
-Proceso: 
-Pensé en cómo se calcula el área de un rectángulo: multiplicando longitud por ancho. 
-La función simplemente toma esos dos parámetros y retorna el resultado de la multiplicación.
-*/
+document.write("<h3>Solución 1:</h3>");
+document.write(`${calcularAreaRectangulo(5, 3)}<br>`); // Resultado: 15
+document.write(`${calcularAreaRectangulo(10, 2)}<br>`); // Resultado: 20
+document.write(`${calcularAreaRectangulo(8, 4)}<br>`); // Resultado: 32
+document.write("<hr>");
 
 // Ejercicio 2: Contar palabras en una cadena
 function contarPalabras(cadena) {
     return cadena.split(" ").length;
 }
 
-console.log("Solución 2:");
-console.log(contarPalabras("Humahuaca es un lugar copado")); // Resultado: 5
-console.log(contarPalabras("Hola mundo")); // Resultado: 2
-console.log(contarPalabras("Esto es un texto de prueba")); // Resultado: 6
-console.log("///////////////////////////////");
 
-/*
-Proceso:
-Decidí dividir la cadena en palabras utilizando el método `split(" ")`, que separa el texto por espacios. 
-Luego, conté la cantidad de elementos resultantes en el array.
-*/
+
+document.write("<h3>Solución 2:</h3>");
+document.write(`${contarPalabras("Humahuaca es un lugar copado")}<br>`); // Resultado: 5
+document.write(`${contarPalabras("Hola mundo")}<br>`); // Resultado: 2
+document.write(`${contarPalabras("Esto es un texto de prueba")}<br>`); // Resultado: 6
+document.write("<hr>");
 
 // Ejercicio 3: Invertir una cadena
 function invertirCadena(cadena) {
     return cadena.split("").reverse().join("");
 }
 
-console.log("Solución 3:");
-console.log(invertirCadena("hola")); // Resultado: "aloh"
-console.log(invertirCadena("mundo")); // Resultado: "odnum"
-console.log(invertirCadena("JavaScript")); // Resultado: "tpircSavaJ"
-console.log("///////////////////////////////");
-
-/*
-Proceso:
-Para invertir una cadena, primero la dividí en caracteres individuales con `split("")`, luego la invertí con `reverse()`
-y volví a unir los caracteres con `join("")`.
-*/
+document.write("<h3>Solución 3:</h3>");
+document.write(`${invertirCadena("hola")}<br>`); // Resultado: "aloh"
+document.write(`${invertirCadena("mundo")}<br>`); // Resultado: "odnum"
+document.write(`${invertirCadena("JavaScript")}<br>`); // Resultado: "tpircSavaJ"
+document.write("<hr>");
 
 // Ejercicio 4: Encontrar el palíndromo
 function esPalindromo(cadena) {
@@ -55,30 +39,20 @@ function esPalindromo(cadena) {
     return cadena === cadenaInvertida;
 }
 
-console.log("Solución 4:");
-console.log(esPalindromo("neuquen")); // true
-console.log(esPalindromo("reconocer")); // true
-console.log(esPalindromo("hola")); // false
-console.log("///////////////////////////////");
-
-/*
-Proceso:
-Comprobé si la cadena original es igual a su versión invertida. Si son iguales, significa que la palabra es un palíndromo.
-*/
+document.write("<h3>Solución 4:</h3>");
+document.write(`${esPalindromo("neuquen")}<br>`); // true
+document.write(`${esPalindromo("reconocer")}<br>`); // true
+document.write(`${esPalindromo("hola")}<br>`); // false
+document.write("<hr>");
 
 // Ejercicio 5: Convertir la edad de un perro a años humanos
 function edadCanina(edadPerro) {
     let edadHumana = edadPerro * 7;
-    console.log(`Tu perro tiene ${edadHumana} años humanos.`);
+    document.write(`Tu perro tiene ${edadHumana} años humanos.<br>`);
 }
 
-console.log("Solución 5:");
+document.write("<h3>Solución 5:</h3>");
 edadCanina(7); // Resultado: Tu perro tiene 49 años humanos.
 edadCanina(3); // Resultado: Tu perro tiene 21 años humanos.
 edadCanina(10); // Resultado: Tu perro tiene 70 años humanos.
-console.log("///////////////////////////////");
-
-/*
-Proceso:
-Multipliqué la edad del perro por 7, que es el factor para convertir la edad canina a años humanos.
-En lugar de retornar un valor, mostré el resultado directamente con un `console.log()`.
+document.write("<hr>");
